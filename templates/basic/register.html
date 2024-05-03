@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body  bgcolor="cadeblue">
+    <a href="/">HOME</a>
+    <a href="register">Register</a>
+    <a href="login">Login</a>
+
+   <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+
+    <center>
+        <h2><u>Register Here</u></h2>
+        <table border="2" cellpadding="8" cellspacing="4">
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="f_name"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="mail"></td>
+            </tr>
+            <tr>
+                <td>Username</td>
+                <td><input type="text" name="Username"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>Photo</td>
+                <td><input type="file" name="photo"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><center><input type="submit" name="sub" value="Register"></center></td>
+            </tr>
+        </table>
+    </center>
+   </form> 
+</body>
+</html>
